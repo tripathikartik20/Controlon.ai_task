@@ -7,6 +7,7 @@ import tkinter as tk
 from tkinter import Label, Button, Canvas
 from PIL import Image, ImageTk
 
+
 SERVER_IP = "127.0.0.1"
 SERVER_PORT = 12345
 MAX_PACKET_SIZE = 65507
@@ -65,7 +66,7 @@ root = tk.Tk()
 root.title("Remote Control GUI")
 
 
-canvas = Canvas(root, width=660, height=260)
+canvas = Canvas(root, width=960, height=420)
 canvas.pack()
 
 
@@ -99,7 +100,7 @@ def _extracted_from_update_video_6(frame1, frame2):
     photo2 = ImageTk.PhotoImage(image=Image.fromarray(frame2))
 
     canvas.create_image(0, 0, anchor=tk.NW, image=photo1)
-    canvas.create_image(330, 0, anchor=tk.NW, image=photo2)
+    canvas.create_image(600, 0, anchor=tk.NW, image=photo2)
 
     canvas.photo1 = photo1
     canvas.photo2 = photo2
