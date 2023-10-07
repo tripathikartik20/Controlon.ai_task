@@ -61,7 +61,7 @@ video_thread1.start()
 video_thread2.start()
 telemetry_thread.start()
 
-# GUI
+
 root = tk.Tk()
 root.title("Remote Control GUI")
 
